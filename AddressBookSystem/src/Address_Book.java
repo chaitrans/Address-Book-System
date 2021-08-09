@@ -1,7 +1,9 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Address_Book {
-
     static Scanner s=new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -28,5 +30,4 @@ public class Address_Book {
             }
         }while(option != 0);
     }
-
 }
