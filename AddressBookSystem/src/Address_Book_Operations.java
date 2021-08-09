@@ -35,6 +35,7 @@ public class Address_Book_Operations {
                 System.out.println("2.Display all contact ");
                 System.out.println("3.Edit Contact ");
                 System.out.println("4.Delete Contact ");
+                System.out.println("5.Search Contact by City");
 
                 choice=s.nextInt();
                 switch (choice)
@@ -58,6 +59,9 @@ public class Address_Book_Operations {
                         break;
                     case 4:
                         Contact_Operations.deleteContact(contact);
+                        break;
+                    case 5:
+                        Contact_Operations.searchByCityOrState(contact);
                         break;
                     default:
                         System.out.println("Enter valid option");
