@@ -85,4 +85,10 @@ public class Contact_Operations {
             }
         }
     }
+
+    public static void searchByCityOrState(List<Contact> contact) {
+        System.out.println("Enter CityName: ");
+        String city = s.next();
+        contact.stream().filter(c -> c.getcity().equals(city)).forEach(System.out::println);
+    }
 }
