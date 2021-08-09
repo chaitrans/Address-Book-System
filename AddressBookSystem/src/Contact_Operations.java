@@ -97,4 +97,21 @@ public class Contact_Operations {
         String city = s.next();
         contact.stream().filter(c -> c.getcity().equals(city)).forEach(cn -> System.out.println("First Name : "+cn.getfirstName()+"  Last Name : "+cn.getlastName()));
     }
+
+    public static void countByCity(List<Contact> contact) {
+
+        System.out.println("Enter the name of the city:");
+        String city=s.next();
+        Long countNamesByCity= contact.stream().filter(e -> city.equals(e.getcity())).count();
+        System.out.println(city+" : "+countNamesByCity);
+
+    }
+
+    public static void countByState(List<Contact> contact) {
+
+        System.out.println("Enter the name of the State:");
+        String state=s.next();
+        Long countNamesByState=contact.stream().filter(e -> state.equals(e.getstate())).count();
+        System.out.println(state+" : "+countNamesByState);
+    }
 }
