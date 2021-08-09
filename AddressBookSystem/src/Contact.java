@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Contact {
     private String firstName;
     private String lastName;
@@ -8,7 +6,6 @@ public class Contact {
     private String zip;
     private String phoneNumber;
     private String email;
-    private List<Contact> contact;
 
     public void setfirstName(String firstName) {
         this.firstName = firstName;
@@ -62,26 +59,6 @@ public class Contact {
     @Override
     public String toString() {
         return '\n'+"Contact is"+'\n'+ "First Name: " + firstName +'\n'+ "Last  Name: " + lastName +'\n'+ "City : " + city +'\n'+ "State : " + state
-                + "zip : " + zip +'\n'+"Phone Number : " + phoneNumber +'\n'+ "Email Id: " + email +'\n';
+                + "\nzip : " + zip +'\n'+"Phone Number : " + phoneNumber +'\n'+ "Email Id: " + email +'\n';
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        boolean retVal = false;
-        if(!(obj instanceof Contact)){
-            return false;
-        }
-        Contact ptr= (Contact) obj;
-        retVal=ptr.firstName.toString()==this.firstName;
-        return retVal;
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 17 * hash + (this.firstName != null ? this.firstName.hashCode() : 0);
-        return hash;
-    }
-
 }
-
