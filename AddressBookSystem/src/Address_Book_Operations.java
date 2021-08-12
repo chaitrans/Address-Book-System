@@ -39,6 +39,7 @@ public class Address_Book_Operations {
                 System.out.println("6.View Contact's First Name and Last Name by City ");
                 System.out.println("7.Count of Total Contacts By City");
                 System.out.println("8.Count of Total Contacts By State");
+                System.out.println("9.Sort Contacts by first Name");
 
                 choice=s.nextInt();
                 switch (choice)
@@ -74,6 +75,9 @@ public class Address_Book_Operations {
                         break;
                     case 8:
                         Contact_Operations.countByState(contact);
+                        break;
+                    case 9:
+                        Contact_Operations.sortedContactByFirstName(contact);
                         break;
                     default:
                         System.out.println("Enter valid option");
