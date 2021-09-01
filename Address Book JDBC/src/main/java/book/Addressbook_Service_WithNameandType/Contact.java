@@ -54,7 +54,4 @@ public class Contact {
         return "Addressbook [FirstName=" + FirstName + ", LastName=" + LastName + ", Address=" + Address + ", City="
                 + City + ", PhoneNo=" + PhoneNo +  "]";
     }
-
-
-
 }
